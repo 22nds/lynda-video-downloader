@@ -86,13 +86,15 @@ def get_videos(page, url_part, pattern):
 
     # Parse html and get the links. Add them to set to save only uniques.
     for link in BeautifulSoup(page, "html.parser", parse_only=tds):
-        if url_part in link['href']:
-            l = link['href']
+
+        link_url = link['href']
+
+        if url_part in link_url:
             try:
                 with youtube_dl.YoutubeDL(options) as ydl:
-                    ydl.download([l])
+                    ydl.download([link_url])
             except:
-                print('Could not download the video: {}.'.format(link['href']))
+                print('Could not download the video: {}.'.format(link_url))
                 print('Check your username, password and course URL.')
                 continue
 
