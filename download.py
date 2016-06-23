@@ -86,9 +86,7 @@ def get_videos(page, url_part, pattern):
 
     # Parse html and get the links. Add them to set to save only uniques.
     for link in BeautifulSoup(page, "html.parser", parse_only=tds):
-
         link_url = link['href']
-
         if url_part in link_url:
             try:
                 with youtube_dl.YoutubeDL(options) as ydl:
