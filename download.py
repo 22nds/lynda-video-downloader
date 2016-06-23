@@ -19,10 +19,9 @@ HOME_DIR = os.getcwd()
 
 
 def move_to_course_directory(title):
-    """Check if current directory is home directory. If not, change to it.
+    """Make sure current directory is the home directory.
     Make a course directory and move to it.
     If course directory already exists, just move to it.
-    If everything fails break the program.
     """
 
     # Move to home directory if we are somewhere else (e.g. course subdir)
@@ -42,7 +41,7 @@ def move_to_course_directory(title):
 
 def parse_url(url):
     """ Extract the short URL for link checking and
-    Course title for creation of video folder.
+    course title for creation of video folder.
     """
 
     try:
