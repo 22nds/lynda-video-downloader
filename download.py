@@ -6,8 +6,8 @@ from bs4 import BeautifulSoup, SoupStrainer
 import youtube_dl
 
 # TODO: Add your Lynda.com LOGIN between quotes.
-USERNAME = ''
-PASSWORD = ''
+USERNAME = 'your-username'
+PASSWORD = 'your-password'
 
 # TODO: Remove the two examples and course URLs.
 COURSES = [
