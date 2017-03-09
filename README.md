@@ -12,7 +12,10 @@ For more info on installation visit their respective web pages.
 
 
 ### Usage
-1. Add your credentials (Lynda.com username and password) and course URLs to settings in download.py
-2. Then go to file directory and run it from the terminal with:
+1. Add your credentials (Lynda.com username and password) to settings in download.py
+2. Add course URLs in links.txt (first remove sample URLs)
+3. Go to file directory where `download.py` and `links.txt` are saved and run `download.py` from the terminal with:
+```python download.py```
+or
 ```python3 download.py```
-3. Wait until all videos are downloaded and have fun watching them.
+4. Wait until all videos are downloaded and have fun watching them.
