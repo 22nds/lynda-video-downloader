@@ -10,7 +10,7 @@ USERNAME = 'your-username'
 PASSWORD = 'your-password'
 
 # Location of the list of course URLs
-LINKS = 'links.txt' 
+LINKS = 'links.txt'
 
 HOME_DIR = os.getcwd()
 
@@ -57,7 +57,7 @@ def get_videos(url):
     options = {
         'username': USERNAME,
         'password': PASSWORD,
-        'outtmpl': u'%(id)s-%(title)s.%(ext)s'
+        'outtmpl': u'%(playlist_index)s-%(title)s.%(ext)s'
     }
 
     try:
