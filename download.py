@@ -57,7 +57,9 @@ def get_videos(url):
     options = {
         'username': USERNAME,
         'password': PASSWORD,
-        'outtmpl': u'%(id)s-%(title)s.%(ext)s'
+        'outtmpl': u'%(playlist_index)s-%(title)s.%(ext)s',
+	'writesubtitles': True,
+        'allsubtitles': True
     }
 
     try:
