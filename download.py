@@ -10,7 +10,7 @@ USERNAME = 'your-username'
 PASSWORD = 'your-password'
 
 # Location of the list of course URLs
-LINKS = 'links.txt' 
+LINKS = 'links.txt'
 
 HOME_DIR = os.getcwd()
 
@@ -58,7 +58,7 @@ def get_videos(url):
         'username': USERNAME,
         'password': PASSWORD,
         'outtmpl': u'%(playlist_index)s-%(title)s.%(ext)s',
-	'writesubtitles': True,
+	    'writesubtitles': True,
         'allsubtitles': True
     }
 
