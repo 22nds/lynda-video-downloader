@@ -9,6 +9,9 @@ import youtube_dl
 USERNAME = 'your-username'
 PASSWORD = 'your-password'
 
+# Download subtitles of the videos
+SUBTITLES = True
+
 # Location of the list of course URLs
 LINKS = 'links.txt'
 
@@ -57,7 +60,9 @@ def get_videos(url):
     options = {
         'username': USERNAME,
         'password': PASSWORD,
-        'outtmpl': u'%(playlist_index)s-%(title)s.%(ext)s'
+        'outtmpl': u'%(playlist_index)s-%(title)s.%(ext)s',
+	'writesubtitles': SUBTITLES,
+        'allsubtitles': SUBTITLES
     }
 
     try:
