@@ -12,6 +12,9 @@ PASSWORD = 'your-password'
 # Download subtitles of the videos
 SUBTITLES = True
 
+# Download accelerator
+EXTERNAL_DL = 'aria2c'
+
 # Location of the list of course URLs
 LINKS = 'links.txt'
 
@@ -61,8 +64,9 @@ def get_videos(url):
         'username': USERNAME,
         'password': PASSWORD,
         'outtmpl': u'%(playlist_index)s-%(title)s.%(ext)s',
-	'writesubtitles': SUBTITLES,
-        'allsubtitles': SUBTITLES
+        'writesubtitles': SUBTITLES,
+        'allsubtitles': SUBTITLES,
+        'external_downloader': EXTERNAL_DL
     }
 
     try:
