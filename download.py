@@ -15,6 +15,9 @@ SUBTITLES = True
 # Download accelerator
 EXTERNAL_DL = 'aria2c'
 
+# Location of archive file
+ARCHIVE = 'archive.txt'
+
 # Location of the list of course URLs
 LINKS = 'links.txt'
 
@@ -66,7 +69,8 @@ def get_videos(url):
         'outtmpl': u'%(playlist_index)s-%(title)s.%(ext)s',
         'writesubtitles': SUBTITLES,
         'allsubtitles': SUBTITLES,
-        'external_downloader': EXTERNAL_DL
+        'external_downloader': EXTERNAL_DL,
+        'download_archive' : ARCHIVE
     }
 
     try:
