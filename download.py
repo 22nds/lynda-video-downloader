@@ -69,8 +69,8 @@ def get_videos(url):
         'outtmpl': u'%(playlist_index)s-%(title)s.%(ext)s',
         'writesubtitles': SUBTITLES,
         'allsubtitles': SUBTITLES,
-        'external_downloader': EXTERNAL_DL,
-        'download_archive': ARCHIVE
+        'download_archive': ARCHIVE,
+        'external_downloader': EXTERNAL_DL
     }
 
     try:
