@@ -70,7 +70,7 @@ def get_videos(url):
         'writesubtitles': SUBTITLES,
         'allsubtitles': SUBTITLES,
         'external_downloader': EXTERNAL_DL,
-        'download_archive' : ARCHIVE
+        'download_archive': ARCHIVE
     }
 
     try:
