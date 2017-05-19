@@ -19,3 +19,14 @@ For more info on installation visit their respective web pages.
 or
 ```python3 download.py```
 4. Wait until all videos are downloaded and have fun watching them.
+
+### Extra
+#### Subtitles
+By default the subtitles are downloaded. If you wish to download videos without subtitles replace `SUBTITLES = True` with `SUBTITLES = False`
+
+#### Downloader
+Default downloader is aria2c. If you wish to change it edit `EXTERNAL_DL = 'aria2c'`
+
+#### Archive
+By default ids of all downloaded videos will be placed in `archive.txt`. To disable archive comment it out from the options. Example:`#'download_archive' : ARCHIVE,`.
+`
