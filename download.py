@@ -9,17 +9,17 @@ import youtube_dl
 USERNAME = 'your-username'
 PASSWORD = 'your-password'
 
+# Location of the list of course URLs
+LINKS = 'links.txt'
+
+# Location of archive file
+ARCHIVE = '../archive.txt'
+
 # Download subtitles of the videos
 SUBTITLES = True
 
 # Download accelerator
 EXTERNAL_DL = 'aria2c'
-
-# Location of archive file
-ARCHIVE = 'archive.txt'
-
-# Location of the list of course URLs
-LINKS = 'links.txt'
 
 HOME_DIR = os.getcwd()
 
