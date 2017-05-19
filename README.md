@@ -28,5 +28,5 @@ By default the subtitles are downloaded. If you wish to download videos without 
 Default downloader is aria2c. If you wish to change it edit `EXTERNAL_DL = 'aria2c'`
 
 #### Archive
-By default ids of all downloaded videos will be placed in `archive.txt`. To disable archive comment it out from the options. Example:`#'download_archive' : ARCHIVE,`.
+By default ids of all downloaded videos will be placed in `archive.txt`. To disable archive comment it out from the options. Example:`#'download_archive' : ARCHIVE,`
 `
